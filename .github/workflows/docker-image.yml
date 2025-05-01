@@ -39,5 +39,5 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ${{ steps.image.outputs.name }}:${{ github.sha }}
-          docker tag ${{ steps.image.outputs.name }}:latest ${{ steps.image.outputs.name }}:${{ github.sha }}
+          docker tag ${{ steps.image.outputs.name }}:${{ github.sha }} ${{ steps.image.outputs.name }}:latest
           docker push ${{ steps.image.outputs.name }}:latest
