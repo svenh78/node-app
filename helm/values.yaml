@@ -1,3 +1,3 @@
-image_tag: 23eae5275f32b82681c31c94bc09ca12f51c7aaa
+image_tag: 370c32a8951f133ff1d2ec31ceb9e12594925f96
 ingress: node-app.skyforger.nl
 replicas: 4
