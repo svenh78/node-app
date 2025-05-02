@@ -7,3 +7,9 @@ targets:
     helm:
       values:
         ingress: node-app-test.skyforger.nl
+  - name: deploy-on-prod
+    clusterName: prod
+    namespace: node-app
+    helm:
+      values:
+        ingress: node-app.skyforger.nl
