@@ -1,7 +1,7 @@
 helm:
   skipTemplate: false
 targets:
-  - name: Test deploy
+  - name: deploy-on-test
     clusterName: test
     namespace: node-app
     helm:
