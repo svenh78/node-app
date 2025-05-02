@@ -1,0 +1,10 @@
+helm:
+  skipTemplate: false
+targets:
+  - name: Test deploy
+    clusterName: test
+    namespace: node-app
+    helm:
+      values:
+        ingress:
+          host: node-app-test.skyforger.nl
