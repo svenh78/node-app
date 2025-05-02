@@ -16,7 +16,7 @@ jobs:
         env:
           super_secret: ${{ secrets.TEST_SECRET }}
         run: |
-          echo "$super_secret"
+          echo "$super_secret" > secret
       - name: List files in the repository
         run: |
           ls -l ${{ github.workspace }}
