@@ -49,7 +49,7 @@ jobs:
       - name: Update Deployment YAML with new image tag
         run: |
           NEW_TAG=${{ github.sha }}
-          sed -i "s|\(image: ghcr.io/svenh78/node-app:\).*|\1$NEW_TAG|" kubernetes/deployment.yaml
+          sed -i "s|\(image_tag: \).*|\1$NEW_TAG|" kubernetes/node-app/values.yaml
           git config --global user.email "svenh@dds.nl"
           git config --global user.name "GitHub Actions"
           git commit -am "Update image tag to $NEW_TAG"
