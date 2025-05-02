@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: node
-        image: ghcr.io/svenh78/node-app:latest
+        image: ghcr.io/svenh78/node-app:ca84b20da8cecf87ff5d34945dff4e2232b089fb
