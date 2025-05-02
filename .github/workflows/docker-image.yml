@@ -2,7 +2,7 @@ name: Build and Push image to GHCR
 
 on:
   push:
-    branches: [test]
+    branches: [test, main]
     paths:
       - 'Dockerfile'
       - 'server.js'
