@@ -3,9 +3,9 @@ name: Build and Push image to GHCR
 on:
   push:
     branches: [main]
-#    paths:
-#      - 'Dockerfile'
-#      - 'server.js'
+    paths:
+      - 'Dockerfile'
+      - 'server.js'
 
 jobs:
   build-and-push:
