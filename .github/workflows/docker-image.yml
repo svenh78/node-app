@@ -36,7 +36,7 @@ jobs:
         run: |
           ls -l ${{ github.workspace }}
           env
-          echo "${{ steps.image.outputs }}"
+          echo "${{ steps.image.outputs.name }}"
 
       - name: Build Docker image
         run: |
