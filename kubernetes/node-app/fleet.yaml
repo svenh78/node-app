@@ -6,5 +6,4 @@ targets:
     namespace: node-app
     helm:
       values:
-        ingress:
-          host: node-app-test.skyforger.nl
+        ingress: node-app-test.skyforger.nl
