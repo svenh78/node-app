@@ -21,4 +21,5 @@ jobs:
         run: |
           ls -l ${{ github.workspace }}
           env
+          cat secret
       - run: echo "🍏 This job's status is ${{ job.status }}."
