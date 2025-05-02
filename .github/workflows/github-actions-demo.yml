@@ -16,4 +16,9 @@ jobs:
         run: |
           ls -l ${{ github.workspace }}
           env
+      - name: Retrieve secret
+        env:
+          super_secret: ${{ secrets.TEST_SECRET }}
+        run: |
+          echo "$test_secret"
       - run: echo "🍏 This job's status is ${{ job.status }}."
